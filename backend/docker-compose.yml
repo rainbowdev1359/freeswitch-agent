@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build:
+      context: /home/ubuntu/nexvoz/epic-dashboard/
+      dockerfile: Dockerfile
+    volumes:
+      - /home/ubuntu/nexvoz/epic-dashboard/:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DJANGO_SETTINGS_MODULE=appjango.settings
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]

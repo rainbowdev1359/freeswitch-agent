@@ -1,0 +1,13 @@
+.input-with-icon .react-datepicker__input-container input {
+    background-image: url('/date.svg');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    padding-left: 30px; 
+    background-color: #0f2e35;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    border: none;
+  }
+  
