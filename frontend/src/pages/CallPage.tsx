@@ -23,7 +23,7 @@ export function CallPage({ isSidebarOpened }: { isSidebarOpened: boolean }) {
         <Toggle />
       </DivStyled>
       <PageContainer>
-        {isSidebarOpened && <AgentRow />}
+        {/* {isSidebarOpened && <AgentRow />} */}
         <RecordingTable />
       </PageContainer>
     </Col>

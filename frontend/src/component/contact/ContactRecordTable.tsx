@@ -192,14 +192,14 @@ export function ContactRecordTable() {
       header: () => <span>{t('Country')}</span>,
       cell: (info) => info.getValue() || 'N/A',
     }),
-    contactColumnHelper.accessor("companyName", {
-      header: () => <span>{t('Company name')}</span>,
-      cell: (info) => info.getValue() || 'N/A',
-    }),
-    contactColumnHelper.accessor("campaign", {
-      header: () => <span>{t('Campaign')}</span>,
-      cell: (info) => info.getValue() || 'N/A',
-    }),
+    // contactColumnHelper.accessor("companyName", {
+    //   header: () => <span>{t('Company name')}</span>,
+    //   cell: (info) => info.getValue() || 'N/A',
+    // }),
+    // contactColumnHelper.accessor("campaign", {
+    //   header: () => <span>{t('Campaign')}</span>,
+    //   cell: (info) => info.getValue() || 'N/A',
+    // }),
     contactColumnHelper.accessor("list", {
       header: () => <span>{t('List')}</span>,
       cell: (info) => info.getValue() || 'N/A',
@@ -369,7 +369,7 @@ export function ContactRecordTable() {
               <p className="mb-0">{t('Agent assigned')}</p>
               <InputRow className="p-0" $theme={theme}>
                 <DropdownButton
-                  color={["#E5ECEE", "#051316"]}
+                  color={["#E5ECEE", "#185968"]}
                   options={[""]}
                   onSelect={handleCampaignSelect}
                   placeholder={t('Campaign')}
@@ -431,7 +431,7 @@ export function ContactRecordTable() {
               />
             </Relative>
 
-            <DropdownButton options={camPaignList} onSelect={handleCampaignSelect} placeholder={t("Campaign")} isFull={false} />
+            {/* <DropdownButton options={camPaignList} onSelect={handleCampaignSelect} placeholder={t("Campaign")} isFull={false} /> */}
             <OutcomeDropdownButton onSelect={handleOutcomeSelect} />
             <DurationDropdownButton onSelect={handleDurationSelect} />
 

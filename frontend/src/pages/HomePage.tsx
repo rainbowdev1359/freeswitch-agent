@@ -8,7 +8,7 @@ export const HomePage = ({ isSidebarOpened }: { isSidebarOpened: boolean }) => {
     <HomeContainer>
       <HeaderHome />
       <PageContainer>
-        {isSidebarOpened && <AgentRow />}
+        {/* {isSidebarOpened && <AgentRow />} */}
         <div className="d-flex flex-column">
           <SectionReport />
           <SectionHome />

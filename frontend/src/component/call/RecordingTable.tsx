@@ -70,10 +70,10 @@ function RecordingTable() {
     //   cell: (info) => info.getValue().to,
     //   header: () => <span>{t('Number')}</span>,
     // }),
-    columnHelper.accessor("campaign", {
-      header: () => <span>{t('Campaign')}</span>,
-      cell: (info) => info.renderValue(),
-    }),
+    // columnHelper.accessor("campaign", {
+    //   header: () => <span>{t('Campaign')}</span>,
+    //   cell: (info) => info.renderValue(),
+    // }),
     columnHelper.accessor("inbound", {
       cell: (info) => info.getValue()?"Incoming":"Outgoing",
       header: () => <span>{t('Type')}</span>,
@@ -230,7 +230,7 @@ function RecordingTable() {
         <Relative>
           <SearchInputMod theme={theme} type="text" placeholder={t('Searching for?')} value={search} onChange={(e) => setSearch(e.target.value)} />
         </Relative>
-        <DropdownButton options={camPaignList} onSelect={handleCampaignSelect} placeholder={t('Campaign')} isFull={false} />
+        {/* <DropdownButton options={camPaignList} onSelect={handleCampaignSelect} placeholder={t('Campaign')} isFull={false} /> */}
         <OutcomeDropdownButton onSelect={handleOutcomeSelect} />
         <DurationDropdownButton onSelect={handleDurationSelect} />
         <DateContainer>

@@ -103,7 +103,7 @@ export function PaymentMethodNew({ setCardModalShow }: any) {
             </div>
             <div className="d-flex gap-0 flex-column">
               <Title theme={theme}>{t('Country')}</Title>
-              <DropdownButton color={["white", "#051316"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t('Country')} isFull={true} />
+              <DropdownButton color={["white", "#185968"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t('Country')} isFull={true} />
             </div>
             <div className="d-flex gap-3 flex-wrap">
               <div className="d-flex flex-column" style={{ width: '48%' }}>

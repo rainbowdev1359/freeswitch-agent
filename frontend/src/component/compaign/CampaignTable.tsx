@@ -366,7 +366,7 @@ function CampaignTable() {
         children={
           <div className="d-flex flex-column gap-1">
             <div className="d-flex gap-0 flex-column">
-              <p className="mb-0 text-center" style={{ color: "#384b4f" }}>
+              <p className="mb-0 text-center" style={{ color: "#5f8086" }}>
                 {t("To avoid clash please edit the campaign you would like to duplicate.")}
               </p>
             </div>
@@ -413,7 +413,7 @@ function CampaignTable() {
               <p className="mb-0">{t("Type")}</p>
               <InputRow className="p-0" $theme={theme}>
                 <DropdownButton
-                  color={["#E5ECEE", "#051316"]}
+                  color={["#E5ECEE", "#185968"]}
                   options={["Incoming", "Outcoming", "Incoming and Outcoming"]}
                   onSelect={handleCampaignSelect}
                   placeholder={t("Inbound or outbound")}
@@ -425,7 +425,7 @@ function CampaignTable() {
               <p className="mb-0">{t("List")}</p>
               <InputRow className="p-0" $theme={theme}>
                 <DropdownButton
-                  color={["#E5ECEE", "#051316"]}
+                  color={["#E5ECEE", "#185968"]}
                   options={[""]}
                   onSelect={handleCampaignSelect}
                   placeholder={t("List A")}
@@ -437,7 +437,7 @@ function CampaignTable() {
               <p className="mb-0">{t("Agent")}</p>
               <InputRow className="p-0" $theme={theme}>
                 <DropdownButton
-                  color={["#E5ECEE", "#051316"]}
+                  color={["#E5ECEE", "#185968"]}
                   options={[""]}
                   onSelect={handleCampaignSelect}
                   placeholder={t("Agent agent")}

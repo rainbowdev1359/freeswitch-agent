@@ -79,12 +79,12 @@ function BillingComponent() {
         {grants.payment && <Tab eventKey="payment" title={t('Payment methods')}>
           <PaymentMethod />
         </Tab>}
-        {grants.invoice && <Tab eventKey="history" title={t('Billing history')}>
+        {/* {grants.invoice && <Tab eventKey="history" title={t('Billing history')}>
           <BillingHistoryTable />
         </Tab>}
         <Tab eventKey="preferences" title={t('Preferences')}>
           <Preferences />
-        </Tab>
+        </Tab> */}
         <Tab eventKey="profile" title={t('My profile')}>
           <MyProfile isActive={activeTab === "profile"} />
         </Tab>

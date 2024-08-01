@@ -24,25 +24,25 @@ function BuySpaceTable({ onHide, isEdit = false }: any) {
       )
     }),
     columnHelper.display({
-      id: "starter", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>{t('Starter Tier')}</p>,
+      id: "starter", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>{t('Starter Tier')}</p>,
       cell: (props: any) => (
         <BHParagraph $theme={theme} style={{ margin: "0 2px", justifyContent: "center", textAlign: "center" }}>{packageList[props.row.id].starter}</BHParagraph>
       )
     }),
     columnHelper.display({
-      id: "silver", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>{t('Silver')}</p>,
+      id: "silver", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>{t('Silver')}</p>,
       cell: (props: any) => (
         <BHParagraph $theme={theme} style={{ margin: "0 2px", justifyContent: "center", textAlign: "center" }}>{packageList[props.row.id].silver}</BHParagraph>
       )
     }),
     columnHelper.display({
-      id: "gold", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>{t('Gold')}</p>,
+      id: "gold", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>{t('Gold')}</p>,
       cell: (props: any) => (
         <BHParagraph $theme={theme} style={{ margin: "0 2px", justifyContent: "center", textAlign: "center" }}>{packageList[props.row.id].gold}</BHParagraph>
       )
     }),
     columnHelper.display({
-      id: "platinum", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>{t('Platinum')}</p>,
+      id: "platinum", header: () => <p className="text-center py-2 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>{t('Platinum')}</p>,
       cell: (props: any) => (
         <BHParagraph $theme={theme} style={{ margin: "0 2px", justifyContent: "center", textAlign: "center" }}>{packageList[props.row.id].platinum}</BHParagraph>
       )

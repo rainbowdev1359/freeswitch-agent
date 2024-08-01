@@ -497,7 +497,7 @@ export function MyProfile({ isActive }: { isActive?: boolean }) {
             <div className="d-flex gap-1 flex-column">
               <Title theme={theme}>{t("Choose language")}</Title>
               <DropdownObjectButton
-                color={["white", "#051316"]}
+                color={["white", "#185968"]}
                 options={langList}
                 onSelect={handleLanguageSelect}
                 isFull={true}
@@ -506,7 +506,7 @@ export function MyProfile({ isActive }: { isActive?: boolean }) {
             <div className="d-flex gap-1 flex-column">
               <Title theme={theme}>{t("Choose currency")}</Title>
               <DropdownButton
-                color={["white", "#051316"]}
+                color={["white", "#185968"]}
                 options={currencyList}
                 onSelect={handleCurrencySelect}
                 placeholder="USD"

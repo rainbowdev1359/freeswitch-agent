@@ -12,7 +12,7 @@ export const homeData: HomeDataType[] = [
       { name: "Intro", color: "#A1D9FC", active: true, value: 0 },
       { name: "Interest", color: "#4094D2", active: true, value: 0 },
       { name: "Info", color: "#0673DC", active: true, value: 0 },
-      { name: "Closing", color: "#0E39D3", active: true, value: 0 },
+      { name: "Closing", color: "#27798b", active: true, value: 0 },
     ],
   },
   {
@@ -26,7 +26,7 @@ export const homeData: HomeDataType[] = [
       { name: "Intro", color: "#A1D9FC", active: true, value: 0 },
       { name: "Interest", color: "#4094D2", active: true, value: 0 },
       { name: "Info", color: "#0673DC", active: true, value: 0 },
-      { name: "Closing", color: "#0E39D3", active: true, value: 0 },
+      { name: "Closing", color: "#27798b", active: true, value: 0 },
     ],
   },
   {
@@ -40,7 +40,7 @@ export const homeData: HomeDataType[] = [
       { name: "Intro", color: "#A1D9FC", active: true, value: 0 },
       { name: "Interest", color: "#4094D2", active: true, value: 0 },
       { name: "Info", color: "#0673DC", active: true, value: 0 },
-      { name: "Closing", color: "#0E39D3", active: true, value: 0 },
+      { name: "Closing", color: "#27798b", active: true, value: 0 },
     ],
   },
   {
@@ -54,7 +54,7 @@ export const homeData: HomeDataType[] = [
       { name: "Intro", color: "#A1D9FC", active: true, value: 0 },
       { name: "Interest", color: "#4094D2", active: true, value: 0 },
       { name: "Info", color: "#0673DC", active: true, value: 0 },
-      { name: "Closing", color: "#0E39D3", active: true, value: 0 },
+      { name: "Closing", color: "#27798b", active: true, value: 0 },
     ],
   },
 ];

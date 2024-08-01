@@ -40,7 +40,7 @@ export function AgentProfiles({ isSidebarOpened, }: { isSidebarOpened: boolean; 
   const callSteps = [
     { name: "Intro", color: "#F0B723", active: true },
     { name: "Interest", color: "#E4F15026", active: false },
-    { name: "Info", color: "#00B7DF26", active: false },
+    { name: "Info", color: "#224D5726", active: false },
     { name: "Closing", color: "#0FBC0C26", active: false },
   ];
   const [showModal, setShowModal] = useState(false);
@@ -154,7 +154,7 @@ export function AgentProfiles({ isSidebarOpened, }: { isSidebarOpened: boolean; 
                           width={300}
                           barHeight={30}
                           barGap={4}
-                          waveColor="#96ADB3"
+                          waveColor="#d3dcdf"
                           url="/piano.mp3"
                           onReady={onReady}
                           onPlay={() => setIsPlaying(true)}
@@ -172,7 +172,7 @@ export function AgentProfiles({ isSidebarOpened, }: { isSidebarOpened: boolean; 
                           barRadius={100}
                           barWidth={3}
                           waveColor={"#0E2B31"}
-                          progressColor="#96ADB3"
+                          progressColor="#d3dcdf"
                           url="/piano.mp3"
                           onReady={onReady}
                           onPlay={() => setIsPlaying(true)}

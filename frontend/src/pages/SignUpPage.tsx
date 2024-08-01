@@ -72,7 +72,7 @@ function SignUpPage() {
   return (
     <AuthenticationContainer $theme={theme}>
       <AuthenticationBox $theme={theme}>
-        <img style={{ width: "95px", height: "80px" }} src={theme === "light" ? "public/Epic Caller AI@300x.png" : "public/Epic Caller AI (2).png"} alt="" />
+        {/* <img style={{ width: "95px", height: "80px" }} src={theme === "light" ? "public/Epic Caller AI@300x.png" : "public/Epic Caller AI (2).png"} alt="" /> */}
         <AuthTitle
           title="SIGN UP"
           description="Create your free account"

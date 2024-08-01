@@ -7,13 +7,13 @@ import { useTranslation } from 'react-i18next';
 import { filterSidebar } from "../utils/common";
 
 const StyledLink = styled(Link) <{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#051316" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "#185968" : "#d3dcdf")};
   border-radius: 20px;
   font-weight: bold;
 `;
 
 const StyledMenu = styled("img")`
-  color: #96adb3;
+  color: #d3dcdf;
   width: 40px;
   height: 40px;
   padding: 5px 0;
@@ -76,16 +76,16 @@ export function SideBar({ activePage, isSidebarOpened, activeMobile, setActiveMo
       icon: theme == "dark" || activePage == "/contact" || hovered == "/contact" ? "/contactIcon.svg" : "contactIcon-light.svg",
       to: "/contact",
     },
-    {
-      name: <span>{t('Campaign')}</span>,
-      icon: theme == "dark" || activePage == "/campaign" || hovered == "/campaign" ? "/campaignIcon.svg" : "campaignIcon-light.svg",
-      to: "/campaign",
-    },
-    {
-      name: <span>{t('Companies')}</span>,
-      icon: theme == "dark" || activePage == "/company" || hovered == "/company" ? "/companyIcon.svg" : "companyIcon-light.svg",
-      to: "/company",
-    },
+    // {
+    //   name: <span>{t('Campaign')}</span>,
+    //   icon: theme == "dark" || activePage == "/campaign" || hovered == "/campaign" ? "/campaignIcon.svg" : "campaignIcon-light.svg",
+    //   to: "/campaign",
+    // },
+    // {
+    //   name: <span>{t('Companies')}</span>,
+    //   icon: theme == "dark" || activePage == "/company" || hovered == "/company" ? "/companyIcon.svg" : "companyIcon-light.svg",
+    //   to: "/company",
+    // },
     {
       name: <span>{t('Knowledge')}</span>,
       icon: theme == "dark" || activePage == "/knowledge" || hovered == "/knowledge" ? "/knowledgeIcon.svg" : "knowledgeIcon-light.svg",
@@ -96,11 +96,11 @@ export function SideBar({ activePage, isSidebarOpened, activeMobile, setActiveMo
     //   icon: theme == "dark" || activePage == "/report" || hovered == "/knowledge" ? "/report.svg" : "report-light.svg",
     //   to: "/report",
     // },
-    {
-      name: <span>{t('Super admin')}</span>,
-      icon: theme == "dark" || activePage == "/superadmin" || hovered == "/superadmin" ? "/superadmin.svg" : "superadmin-light.svg",
-      to: "/superadmin",
-    },
+    // {
+    //   name: <span>{t('Super admin')}</span>,
+    //   icon: theme == "dark" || activePage == "/superadmin" || hovered == "/superadmin" ? "/superadmin.svg" : "superadmin-light.svg",
+    //   to: "/superadmin",
+    // },
     {
       name: <span>{t('Billing')}</span>,
       icon: theme == "dark" || activePage == "/billing" || hovered == "/billing" ? "/billing.svg" : "billing-light.svg",
@@ -157,9 +157,9 @@ export function SideBar({ activePage, isSidebarOpened, activeMobile, setActiveMo
             </li>
           ))}
         </ul>
-        {isSidebarOpened && <div className={`text-center`} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "calc(100vh - 660px)"}}>
+        {/* {isSidebarOpened && <div className={`text-center`} style={{display: "flex", justifyContent: "center", alignItems: "center", height: "calc(100vh - 660px)"}}>
           <img src={theme === "light" ? `/Epic Caller AI@300x.png` : `/Epic Caller AI (2).png`} style={{width: "160px", height: "134px"}}/>
-        </div>}
+        </div>} */}
       </div>
     </>
   );

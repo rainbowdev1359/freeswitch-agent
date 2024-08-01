@@ -168,7 +168,7 @@ function RecordingTable() {
                   <AgentParagraph className="my-1">{t("Last update: 31/05/2024 : 12:24")}</AgentParagraph>
                   <div className="d-flex gap-2 flex-wrap w-full align-items-center">
                     <AgentParagraph>{t("Ticket status:")}</AgentParagraph>
-                    <DropdownButton color={["white", "#051316"]} options={ticketStatusList} onSelect={handleOutcomeSelect} isFull={false} />
+                    <DropdownButton color={["white", "#185968"]} options={ticketStatusList} onSelect={handleOutcomeSelect} isFull={false} />
                   </div>
                   <Title theme={theme}>{t('Ticket history')}</Title>
                   <AgentParagraph>{t("Ticket status has changed to Escalated by SOS 23/05/2024")}</AgentParagraph>

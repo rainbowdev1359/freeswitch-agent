@@ -11,7 +11,7 @@ export function AgentPage({ isSidebarOpened }: { isSidebarOpened: boolean }) {
       <Col className="px-0 ">
         <Header />
         <PageContainer>
-          {isSidebarOpened && <AgentRow />}
+          {/* {isSidebarOpened && <AgentRow />} */}
           <AgentProfiles isSidebarOpened={isSidebarOpened} />
         </PageContainer>
       </Col>

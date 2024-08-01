@@ -58,7 +58,7 @@ export const AParagraph = styled.div<{ $theme: string, $border?: boolean }>`
   background:${props => props.$border ? "#224D57" : "transparent"} ;
   padding: ${props => props.$border ? "3px 5px" : ""};
   border-radius:${props => props.$border ? "20px" : ""};
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "#96adb3")};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#d3dcdf")};
   margin-bottom: 0;
 `;
 
@@ -73,12 +73,12 @@ export const Menu = styled.div<{ $theme?: string }>`
   padding: 24px;
   min-width: 394px;
   max-width: 480px;
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "")};
-  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#0b2227"};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "")};
+  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#27798b"};
 `;
 
 export const EditorContainer = styled.div<{ $theme?: string }>`
-  color: ${(props) => (props.$theme == "light" ? "#384B4F" : "white")};
+  color: ${(props) => (props.$theme == "light" ? "#5f8086" : "white")};
 `;
 
 export const PromptContainer = styled.div`
@@ -86,7 +86,7 @@ export const PromptContainer = styled.div`
 `;
 
 export const Head = styled.div`
-  color: #00b7df;
+  color: #224D57;
   font-size: 36px;
   font-weight: 600;
   line-height: 46px;
@@ -96,7 +96,7 @@ export const Head = styled.div`
 
 export const CallOnQueParagraph = styled.p<{ theme: string }>`
   font-size: 20px;
-  color: ${(props) => props.theme == "light" ? "#0F2E35" : "rgba(201, 213, 216, 1)"};
+  color: ${(props) => props.theme == "light" ? "#27798b" : "rgba(201, 213, 216, 1)"};
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 0em;
@@ -107,20 +107,20 @@ export const TabButtonRow = styled.div<{ $theme?: string }>`
   display: flex;
   padding: 4px 12px;
   border-radius: 16px;
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "#E5ECEE")};
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0F2E35"};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#E5ECEE")};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
 `;
 
 export const TextAreaMod = styled.textarea<{ theme: string, border?: boolean }>`
   float: right;
   padding: 6px 6px;
   margin-top: 12px;
-  border: ${(props) => props.border ? "1px solid #00B7DF" : "none"};
+  border: ${(props) => props.border ? "1px solid #224D57" : "none"};
   font-size: 17px;
-  background-color: ${(props) => props.theme === "light" ? "#E5ECEE" : "#051316"};
+  background-color: ${(props) => props.theme === "light" ? "#E5ECEE" : "#185968"};
   outline: none;
   border-radius: 12px;
-  color: ${(props) => props.theme === "light" ? "black" : "#96adb3"};
+  color: ${(props) => props.theme === "light" ? "black" : "#d3dcdf"};
   width: 100%;
 `;
 
@@ -128,11 +128,11 @@ export const AITextShow = styled.textarea<{ $theme?: string, border?: boolean }>
   display: flex;
   margin-top: 12px;
   min-height: 300px;
-  border: ${(props) => props.border ? "1px solid #00B7DF" : "none"};
+  border: ${(props) => props.border ? "1px solid #224D57" : "none"};
   padding: 4px 12px;
   border-radius: 12px;
-  color: ${(props) => props.$theme === "light" ? "black" : "#96adb3"};
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#051316"};
+  color: ${(props) => props.$theme === "light" ? "black" : "#d3dcdf"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#185968"};
 `;
 
 export const GridContainer = styled.div<{ $selected?: boolean; $isSidebarOpened?: boolean; }>`
@@ -171,7 +171,7 @@ export const AgentProfileLeft = styled.div<{ $theme?: string }>`
   }
   width: 35%;
   min-width: 470px;
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0b2227"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
   height: calc(100vh - 129px);
 `;
 
@@ -181,7 +181,7 @@ export const Scroll = styled.div`
 `;
 
 export const OnGoingCall = styled.div<{ $theme?: string }>`
-  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#051316"};
+  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#185968"};
   padding: 16px, 12px;
   border-radius: 16px;
   padding: 10px;
@@ -265,7 +265,7 @@ export const SeAllButton = styled.button<{ $theme?: string }>`
   border-radius: 24px;
   padding: 4px 10px;
   border: none;
-  color: ${(props) => props.$theme == "light" ? "#0F2E35" : "rgba(201, 213, 216, 1)"};
+  color: ${(props) => props.$theme == "light" ? "#27798b" : "rgba(201, 213, 216, 1)"};
   height: 37px;
 `;
 
@@ -282,10 +282,10 @@ export const InputMod = styled.input<{ theme: string }>`
   border: none;
   margin: 8px 0;
   font-size: 17px;
-  background-color: ${(props) => (props.theme === "light" ? "#C9D5D8" : "#0f2e35")};
+  background-color: ${(props) => (props.theme === "light" ? "#C9D5D8" : "#27798b")};
   outline: none;
   border-radius: 8px;
-  color: ${(props) => props.theme === "light" ? "black" : "#96adb3"};
+  color: ${(props) => props.theme === "light" ? "black" : "#d3dcdf"};
   @media (max-width: 600px) {
     width: 100%;
   }
@@ -293,7 +293,7 @@ export const InputMod = styled.input<{ theme: string }>`
 `;
 
 export const CallQueContainer = styled.div<{ $theme?: string }>`
-  background: ${props => props.$theme == "light" ? "linear-gradient(180deg, #C9D5D8 0%, #96ADB3  77.4%)" : "linear-gradient(180deg, #0B2227 0%, #09181B 77.4%)"};
+  background: ${props => props.$theme == "light" ? "linear-gradient(180deg, #C9D5D8 0%, #d3dcdf  77.4%)" : "linear-gradient(180deg, #27798b 0%, #09181B 77.4%)"};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -327,12 +327,12 @@ export const MoveButton = styled.div<{ $theme?: string }>`
 `;
 
 export const HMod = styled.h5<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#051316" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#185968" : "#c9d5d8")};
   font-weight: bold;
 `;
 
 export const PMode = styled.p`
-  color: #394b4f;
+  color: #6b8c94;
 `;
 
 export const ModalContainer = styled.div <{ width?: string }>`
@@ -347,36 +347,36 @@ export const ControllerContainer = styled.div<{ $selected?: boolean }>`
 `;
 
 export const DropMod = styled(Dropdown.Toggle) <{ $theme?: string }>`
-  background-color: ${(props) => props.$theme == "light" ? "#FEFEFE" : "#0f2e35"};
+  background-color: ${(props) => props.$theme == "light" ? "#FEFEFE" : "#27798b"};
   border: none;
   border-radius: 20px;
-  color: ${(props) => (props.$theme === "light" ? "#0F2E35" : "#96adb3")};
+  color: ${(props) => (props.$theme === "light" ? "#27798b" : "#d3dcdf")};
   height: 40px;
   font-size: 14px;
   &:hover {
-    background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#00b7df"};
+    background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#224D57"};
     color: black;
   }
   &:active {
-    background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#00b7df"};
+    background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#224D57"};
     color: black;
   }
 `;
 
 export const DropMenu = styled(Dropdown.Menu) <{ $theme?: string }>`
-  background-color: ${(props) => props.$theme == "light" ? "##FEFEFE" : "#0f2e35"};
+  background-color: ${(props) => props.$theme == "light" ? "##FEFEFE" : "#27798b"};
 `;
 export const DropItem = styled(Dropdown.Item) <{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "black" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "black" : "#d3dcdf")};
 `;
 
 
 export const H1Styled = styled.h4<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#051316" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "#185968" : "#d3dcdf")};
   font-weight: bold;
 `;
 export const DivStyled = styled.div<{ theme: string }>`
-  border-bottom: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+  border-bottom: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
   width: 100%;
   padding: 0px 0px 0px 50px;
   @media (max-width: 993px) {
@@ -386,7 +386,7 @@ export const DivStyled = styled.div<{ theme: string }>`
 `;
 
 export const PModified = styled.p<{ theme: string }>`
-  color: ${(props) => (props.theme == "light" ? "#0F2E35" : "#384b4f")};
+  color: ${(props) => (props.theme == "light" ? "#27798b" : "#5f8086")};
   font-weight: bold;
 `;
 
@@ -404,7 +404,7 @@ export const FlexContainer = styled.div`
 `
 
 export const Paragraph = styled.div<{ theme: string }>`
-  background: ${(props) => (props.theme === "light" ? "-webkit-linear-gradient(#17434D, #4B7681)" : "-webkit-linear-gradient(#96ADB3, #17434D)")};
+  background: ${(props) => (props.theme === "light" ? "-webkit-linear-gradient(#17434D, #4B7681)" : "-webkit-linear-gradient(#d3dcdf, #17434D)")};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
@@ -415,21 +415,21 @@ export const Paragraph = styled.div<{ theme: string }>`
 
 export const CreateButton = styled.button<{ $theme?: string }>`
   border-radius: 20px;
-  background-color: ${(props) => props.$theme === "light" ? "#224D57" : "#0f2e35"};
+  background-color: ${(props) => props.$theme === "light" ? "#224D57" : "#27798b"};
   min-width: fit-content;
   font-size: 14px;
   height: fit-content;
   padding: 8px 16px;
-  color: ${(props) => (props.$theme == "light" ? "#DCDCDC" : "#96adb3")};
+  color: ${(props) => (props.$theme == "light" ? "#DCDCDC" : "#d3dcdf")};
   border: none;
   &:hover {
-    background-color: #00B7DF;
+    background-color: #224D57;
     color: black;
   }
 `;
 
 export const ParentButton = styled.div<{ $theme?: string }>`
-  background-color: ${(props) => props.$theme === "light" ? "#C9D5D8" : "#0b2227"};
+  background-color: ${(props) => props.$theme === "light" ? "#C9D5D8" : "#27798b"};
   height: fit-content;
   width: fit-content;
   max-width: fit-content;
@@ -448,11 +448,11 @@ export const RecordingTableContainer = styled.div`
 `;
 
 export const SectionParent = styled.div<{ theme: string }>`
-  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #0b2227 0%, #09181b 77.4%)"};
+  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #27798b 0%, #09181b 77.4%)"};
   border-radius: 20px;
   min-width: 400px;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
-  border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
+  border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
 `;
 
 export const Title = styled.div<{ theme: string }>`
@@ -460,7 +460,7 @@ export const Title = styled.div<{ theme: string }>`
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0em;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#c9d5d8")};
   padding-bottom: 8px;
   text-align: left;
 `;
@@ -470,7 +470,7 @@ export const ModalTitle = styled.div<{ theme: string }>`
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0em;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#c9d5d8")};
   padding-bottom: 8px;
   text-align: left;
 `;
@@ -481,7 +481,7 @@ export const InputRow = styled.div<{ $theme?: string }>`
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
-  background-color: ${(props) => props.$theme == "light" ? "#FEFEFE" : "#051316"};
+  background-color: ${(props) => props.$theme == "light" ? "#FEFEFE" : "#185968"};
 `;
 
 export const Input = styled.input<{ $theme?: string }>`
@@ -500,9 +500,9 @@ export const SearchBtnContainer = styled.div`
 `;
 
 export const LinkP = styled.button<{ $theme?: string }>`
-  border: ${(props) => props.$theme == "light" ? "1px solid #0F2E35" : "0px solid transparent"};
-  color: ${(props) => props.$theme == "light" ? "#0F2E35" : "rgba(201, 213, 216, 1)"};
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0F2E35"};
+  border: ${(props) => props.$theme == "light" ? "1px solid #27798b" : "0px solid transparent"};
+  color: ${(props) => props.$theme == "light" ? "#27798b" : "rgba(201, 213, 216, 1)"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
   height: fit-content;
   padding: 5px 16px;
   border-radius: 18px;
@@ -518,15 +518,15 @@ export const UnderLineSpan = styled.span`
 
 export const EditPackageButton = styled.button<{ $theme?: string }>`
   border-radius: 20px;
-  border: ${(props) => props.$theme == "light" ? "1px solid #0F2E35" : "0px solid transparent"};
-  color: ${(props) => props.$theme == "light" ? "#0F2E35" : "rgba(201, 213, 216, 1)"};
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0F2E35"};
+  border: ${(props) => props.$theme == "light" ? "1px solid #27798b" : "0px solid transparent"};
+  color: ${(props) => props.$theme == "light" ? "#27798b" : "rgba(201, 213, 216, 1)"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
   min-width: fit-content;
   font-size: 14px;
   height: fit-content;
   padding: 8px 16px;
   &:hover {
-    background-color: #00B7DF;
+    background-color: #224D57;
     color: black;
   }
 `;
@@ -537,27 +537,27 @@ export const BackPageButton = styled.button<{ $theme?: string }>`
   font-size: 14px;
   height: fit-content;
   padding: 8px 16px;
-  color: ${(props) => (props.$theme == "light" ? "#0f2e35" : "#96adb3")};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#d3dcdf")};
   border: none;
 `;
 
 export const UploadImageButton = styled.label<{ $theme?: string }>`
   border-radius: 20px;
-  border: ${(props) => props.$theme == "light" ? "1px solid #0F2E35" : "0px solid transparent"};
-  color: ${(props) => props.$theme == "light" ? "#0F2E35" : "rgba(201, 213, 216, 1)"};
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0F2E35"};
+  border: ${(props) => props.$theme == "light" ? "1px solid #27798b" : "0px solid transparent"};
+  color: ${(props) => props.$theme == "light" ? "#27798b" : "rgba(201, 213, 216, 1)"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
   min-width: fit-content;
   font-size: 14px;
   height: fit-content;
   padding: 8px 16px;
   &:hover {
-    background-color: #00B7DF;
+    background-color: #224D57;
     color: black;
   }
 `;
 
 export const BHParagraph = styled.div<{ $theme?: string }>`
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "#C9D5D8")};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#C9D5D8")};
 `;
 
 export const CustomTableContainer = styled.div`
@@ -572,7 +572,7 @@ export const PackageTableContainer = styled.div`
 
 export const CompanyTableContainer = styled.div<{ theme: string }>`
   flex-grow: 1;
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0A2328"};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#1f6b7a"};
   padding: 24px 16px;
   border-radius: 8px;
   overflow: hidden;
@@ -580,7 +580,7 @@ export const CompanyTableContainer = styled.div<{ theme: string }>`
 `;
 
 export const MPParagraph = styled.div`
-  color: #394b4f;
+  color: #6b8c94;
   padding-bottom: 20px;
 `;
 
@@ -588,7 +588,7 @@ export const PMParagraph = styled.div<{ $theme?: string }>`
   margin-bottom: 0px;
   font-weight: 600;
   font-size: 20px;
-  color:  ${(props) => (props.$theme == "light" ? "#0F2E35" : "#96ADB3")};
+  color:  ${(props) => (props.$theme == "light" ? "#27798b" : "#d3dcdf")};
 `;
 
 export const MPTitle = styled.div<{ theme: string }>`
@@ -616,8 +616,8 @@ export const Relative = styled.div`
 `;
 
 export const DatePickerWrapper = styled(DatePicker) <{ $theme?: string }>`
-  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#0A2328"} !important;
-  color: ${(props) => props.$theme == "light" ? "#0A2328" : "#C9D5D8"} !important;
+  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#1f6b7a"} !important;
+  color: ${(props) => props.$theme == "light" ? "#1f6b7a" : "#C9D5D8"} !important;
 `;
 
 export const DateContainer = styled.div`
@@ -634,10 +634,13 @@ export const SearchInputMod = styled.input<{ theme: string }>`
   padding: 6px 6px;
   border: none;
   font-size: 17px;
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0a2328"};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#1f6b7a"};
   outline: none;
   border-radius: 8px;
-  color: ${(props) => props.theme === "light" ? "black" : "#96adb3"};
+  color: ${(props) => props.theme === "light" ? "black" : "#d3dcdf"};
+  &::placeholder {
+    color: ${(props) => props.theme === "light" ? "gray" : "#d3dcdf"}; /* Adjust color as needed */
+  }
   @media (max-width: 600px) {
     width: 100%;
   }
@@ -646,15 +649,15 @@ export const SearchInputMod = styled.input<{ theme: string }>`
 
 export const DateParagraph = styled.p<{ $theme?: string }>`
   margin: 0px;
-  color: ${(props) => props.$theme == "light" ? "#384B4F !important" : "#C9D5D8 !important"};
+  color: ${(props) => props.$theme == "light" ? "#5f8086 !important" : "#C9D5D8 !important"};
 `;
 
 export const BackButton = styled.button<{ $theme?: string }>`
   height: 40px;
   padding: 8px, 12px;
   border-radius: 24px;
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE !important" : "#0f2e35"};
-  color: #96adb3;
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE !important" : "#27798b"};
+  color: #d3dcdf;
   gap: 4px;
 `;
 
@@ -701,13 +704,13 @@ export const AuthenticationBox = styled.div<{ $theme?: string | null }>`
 `;
 
 export const CheckCont = styled.div<{ $theme: string | null }>`
-  background-color: ${(props) => props.$theme == "light" ? "#0F2E35" : "##051316"};
+  background-color: ${(props) => props.$theme == "light" ? "#27798b" : "##185968"};
 `;
 
 export const InputContainer = styled.div<{ $theme?: string | null }>`
   border-radius: 9px !important;
-  border: 1px solid #0f2e35;
-  color:${(props) => (props.$theme == "light" ? "#0F2E35" : "white")}
+  border: 1px solid #27798b;
+  color:${(props) => (props.$theme == "light" ? "#27798b" : "white")}
   display: flex;
   max-width: 600px;
   width: 100%;
@@ -724,7 +727,7 @@ export const InputContainer = styled.div<{ $theme?: string | null }>`
 export const AutherInput = styled.input<{ $theme?: string }>`
   background-color: transparent;
   border: none;
-  color: ${(props) => (props.$theme == "light" ? "#0A2328" : "#ffffff")};
+  color: ${(props) => (props.$theme == "light" ? "#1f6b7a" : "#ffffff")};
   outline: none;
   flex-grow: 1;
   padding: 2px;
@@ -736,15 +739,15 @@ export const AutherTitle = styled.div<{ theme?: string }>`
 `;
 
 export const PageTitle = styled.div<{ $theme?: string | null }>`
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "#FFFFFF")};
-  font-size: 20px;
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#FFFFFF")};
+  font-size: 35px;
   font-weight: 600;
   line-height: 25px;
   text-align: center;
 `;
 
 export const PageDescription = styled.div<{ $theme?: string | null }>`
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "#FFFFFF")};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "#FFFFFF")};
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -761,7 +764,7 @@ export const GoogleButton = styled.button`
   }
   border: none;
   height: 44px;
-  background: #051316;
+  background: #185968;
   padding: 10px;
   color: #ffffff;
   font-size: 12px;
@@ -779,7 +782,7 @@ export const Continue = styled.button<{ $theme?: string | null }>`
     width: 100%;
   }
   border: none;
-  color: ${(props) => (props.$theme == "light" ? "white" : "#0F2E35")};
+  color: ${(props) => (props.$theme == "light" ? "white" : "#27798b")};
   background-color: ${(props) => props.$theme == "light" ? "#09BED7" : "white"};
   height: 44px;
   padding: 12px 8px;
@@ -795,7 +798,7 @@ export const FooterContainer = styled.div<{ $theme?: string | null }>`
   display: flex;
   width: 442px;
   align-items: center;
-  color: ${(props) => (props.$theme == "light" ? "#0F2E35" : "white")};
+  color: ${(props) => (props.$theme == "light" ? "#27798b" : "white")};
   gap: 5px;
   justify-content: center;
 `;
@@ -830,13 +833,13 @@ export const CheckBoxContainer = styled.div<{ $theme?: string }>`
   align-items: start;
   padding: 8px 8px;
   border-radius: 8px;
-  color: ${(props) => props.$theme == "light" ? "#051316" : "#96adb3"};
+  color: ${(props) => props.$theme == "light" ? "#185968" : "#d3dcdf"};
   font-size: 14px;
   font-weight: 400;
   gap: 6px;
   height: fit-content;
   line-height: 18px;
-  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#051316"};
+  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#386766"};
 `;
 
 export const Flex = styled.div<{ $theme?: string }>`
@@ -845,7 +848,7 @@ export const Flex = styled.div<{ $theme?: string }>`
   }
   width: 422px;
   display: flex;
-  color: ${(props) => (props.$theme == "light" ? "#384B4F" : "white")};
+  color: ${(props) => (props.$theme == "light" ? "#5f8086" : "white")};
 `;
 
 export const LoginLink = styled.a`
@@ -856,12 +859,12 @@ export const LoginLink = styled.a`
 export const AgentParagraph = styled.div<{ theme: string }>`
   margin-bottom: 0;
   font-size: 16px;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
 `;
 
 export const ParagraphBold = styled(AgentParagraph) <{ theme: string }>`
   font-weight: bold;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#c9d5d8")};
 `;
 
 export const AgentEditIcon = styled.img`
@@ -872,7 +875,7 @@ export const AgentCallSettingCol = styled.div<{ theme: string }>`
   background: ${(props) =>
     props.theme === "light"
       ? "linear-gradient(#E6EDEF, #EDEFE6)"
-      : "linear-gradient(to bottom, #0f2e35, #17454f)"};
+      : "linear-gradient(to bottom, #27798b, #2e8a9e)"};
   border-radius: 16px;
 `;
 
@@ -890,7 +893,7 @@ export const AgentRow = styled.div<{ $minute_container?: boolean; theme: string 
 
 export const AgentRowContainer = styled.div<{ theme: string }>`
   padding: 16px 20px;
-  background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#040f12"};
+  background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#134753"};
   height: calc(100vh - 100px);
   overflow-y: auto;
   min-width: 360px;
@@ -930,7 +933,7 @@ export const ContactRecordTitle = styled.div<{ selected?: boolean; $theme?: stri
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0em;
-  color: ${(props) => (props.$theme == "light" ? (props.selected ? "white" : "#0F2E35") : "#c9d5d8")};
+  color: ${(props) => (props.$theme == "light" ? (props.selected ? "white" : "#27798b") : "#c9d5d8")};
   padding: 8px;
   text-align: left;
 `;
@@ -972,7 +975,7 @@ export const ActionDiv = styled.div`
 
 export const Tab = styled.div<{ $theme?: string }>`
   background-color: ${(props) =>
-    props.$theme == "light" ? "#C9D5D8" : "#0A2328"};
+    props.$theme == "light" ? "#C9D5D8" : "#1f6b7a"};
   padding: 4px;
   display: flex;
   gap: 1px;
@@ -989,16 +992,16 @@ export const ButtonPopupContainer = styled.dialog<{ theme?: string, $id: string 
   width: 204px;
   left: -160px;
   border-radius: 20px;
-  color: #96adb3;
+  color: #d3dcdf;
   z-index: 100;
   top: ${props => (parseInt(props.$id) % 10) <= 4 ? "25px" : ""};
   bottom: ${props => (parseInt(props.$id) % 10) >= 5 ? "25px" : ""};
-  background-color: ${props => props.theme == "light" ? "#C9D5D8" : "#0b2227"};
+  background-color: ${props => props.theme == "light" ? "#C9D5D8" : "#27798b"};
   color: ${props => props.theme == "light" ? "black" : ""};
 `;
 
 export const KnowledgeDivStyled = styled.div<{ theme: string }>`
-  border-bottom: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+  border-bottom: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
   display: flex;
   @media (max-width: 600px) {
     margin-top: 40px;
@@ -1006,11 +1009,11 @@ export const KnowledgeDivStyled = styled.div<{ theme: string }>`
 `;
 
 export const FileCol = styled.div<{ theme: string }>`
-  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : " #0b2227"};
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "white")};
+  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : " #27798b"};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "white")};
   height: fit-content;
   border-radius: 10px;
-  border: ${(props) => props.theme == "light" ? "1px solid #96ADB3" : "1px solid #0f2e35"};
+  border: ${(props) => props.theme == "light" ? "1px solid #d3dcdf" : "1px solid #27798b"};
 `;
 
 export const CircledD = styled.p`
@@ -1042,17 +1045,17 @@ export const CircledV = styled.p`
 `;
 
 export const StyledH4 = styled.h4<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#c9d5d8")};
 `;
 
 export const ComponentDiv = styled.div<{ theme: string }>`
   border-bottom: ${(props) =>
-    props.theme == "light" ? "1px solid #96ADB3" : "1px solid #0f2e35"};
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
+    props.theme == "light" ? "1px solid #d3dcdf" : "1px solid #27798b"};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
 `;
 
 export const ParentProgressBar = styled.div`
-  border: 2px solid #09D799;
+  border: 2px solid #185968;
   border-radius: 20px;
   padding: 5px;
   width: 100%;
@@ -1061,40 +1064,41 @@ export const ParentProgressBar = styled.div`
 `;
 
 export const ChildProgressBar = styled.div<{ percent: number }>`
-  background-color: #09D799;
+  background-color: #185968;
   border-radius: 20px;
-  color: black;
+  color: white;
   width: ${(props) => (props.percent ?? "10")}%;
   padding-inline: 5px;
 `;
 
 export const SalesCol = styled.div<{ theme: string }>`
-  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : " #0b2227"};
+  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : " #27798b"};
   border-radius: 10px;
-  border: ${(props) => props.theme == "light" ? "1px solid #96ADB3" : "1px solid #0f2e35"};
+  border: ${(props) => props.theme == "light" ? "1px solid #d3dcdf" : "1px solid #27798b"};
 `;
 
 export const KnowledgeLinkP = styled.p<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#c9d5d8")};
   &:hover {
     cursor: pointer;
   }
 `;
 
 export const ComponentRender = styled.button<{ theme: string }>`
-  border: 2px solid #96adb3;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
+  border: 2px solid #d3dcdf;
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
   background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "transparent"};
   border-radius: 25px;
   &:hover {
-    background-color: ${(props) => props.theme === "light" ? "#0F2E35" : "#4a666c"};
-    color: ${(props) => (props.theme === "dark" ? "#0F2E35" : "#96adb3")};
+    background-color: ${(props) => props.theme === "light" ? "#27798b" : "#185968"};
+    color: ${(props) => (props.theme === "light" ? "#27798b" : "#FFFFFF")};
 
-    border-color: #96adb3;
+    border-color: #d3dcdf;
   }
   &:active {
-    background-color: #4a666c;
-    border-color: #96adb3;
+    background-color: #27798B;
+    color: white;
+    border-color: #d3dcdf;
   }
 `;
 
@@ -1127,17 +1131,17 @@ export const HomeContainer = styled.div`
 
 export const KnowledgePreviewDiv = styled.div<{ theme: string }>`
   padding: 10px;
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0f2e35"};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#27798b"};
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 5px;
   }
-  color: ${(props) => (props.theme === "dark" ? "#C9D5D8" : "#0f2e35")};
+  color: ${(props) => (props.theme === "dark" ? "#C9D5D8" : "#27798b")};
 `;
 
 export const KnowledgePreviewButton = styled.button<{ $theme?: string }>`
-  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#051316"};
-  color: ${(props) => props.$theme == "light" ? "#051316" : "#96adb3"};
+  background-color: ${(props) => props.$theme == "light" ? "#C9D5D8" : "#185968"};
+  color: ${(props) => props.$theme == "light" ? "#185968" : "#d3dcdf"};
   border: none;
   padding: 6px 12px;
   border-radius: 16px;
@@ -1148,8 +1152,8 @@ export const CalendarDateParagraph = styled.p`
     font-weight: 700;
     line-height: 25.5px;
     text-align: center;
-    color: #96adb3;
-    background-color: #0F2E35;
+    color: #d3dcdf;
+    background-color: #27798b;
     margin-bottom: 0px;
     padding: 8px;
     border-radius: 12px;
@@ -1161,12 +1165,12 @@ export const CalendarDayParagraph = styled.p<{ isSelected?: boolean }>`
     align-items:center;
     justify-content:center;
     aspect-ratio:1;
-    background-color:${props => props.isSelected ? "#0F2E35" : "0"};
+    background-color:${props => props.isSelected ? "#27798b" : "0"};
     border-radius:${props => props.isSelected ? "50%" : "0"};
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    color: #96adb3;
+    color: #d3dcdf;
 `;
 export const CalendarDateButton = styled.div <{ color?: string, textcolor?: string }>`
     width: 196px;

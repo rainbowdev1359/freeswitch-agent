@@ -96,14 +96,14 @@ function Calendar({ isMonthSelector, clearfilter, applyFilter }: { isMonthSelect
             </table>}
 
             <div className='d-flex gap-2 mt-4'>
-                <CalendarDateButton textcolor='#0A2328' color='#96ADB3' onClick={() => {
+                <CalendarDateButton textcolor='#1f6b7a' color='#d3dcdf' onClick={() => {
                     setSelectedDate(new Date().getDate())
                     clearfilter()
                 }}
                 >
                     {t("Clear filter")}
                 </CalendarDateButton>
-                <CalendarDateButton textcolor='#96ADB3' color='#0F2E35' onClick={() => {
+                <CalendarDateButton textcolor='#d3dcdf' color='#27798b' onClick={() => {
                     var month = currentMonth + 1;
                     var monthString = parseInt(month.toString(), 10) < 10 ? `0${month}` : month
                     var dateString = parseInt(selectedDate.toString(), 10) < 10 ? `0${selectedDate}` : selectedDate

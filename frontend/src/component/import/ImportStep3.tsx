@@ -86,7 +86,7 @@ const ParagraphTitle = styled.p<{ $theme?: string }>`
   letter-spacing: 0em;
   text-align: left;
   flex-grow: 1;
-  color: ${props => props.$theme == "light" ? "#0F2E35" : "#C9D5D8"};
+  color: ${props => props.$theme == "light" ? "#27798b" : "#C9D5D8"};
 `;
 
 function ImportStep3({ setActiveTopBar, isSidebarOpened, importContact, importDatas, setImportDatas }: { setActiveTopBar?: any, isSidebarOpened: boolean, importContact: any, importDatas: any, setImportDatas: any }) {
@@ -144,7 +144,7 @@ function ImportStep3({ setActiveTopBar, isSidebarOpened, importContact, importDa
     });
     setImportDatas(newArray);
   }
-  const bg = theme === "light" ? "#C9D5D8" : "#0A2328";
+  const bg = theme === "light" ? "#C9D5D8" : "#1f6b7a";
 
   const importingFinishHandler = async () => {
     // handle api
@@ -193,7 +193,7 @@ function ImportStep3({ setActiveTopBar, isSidebarOpened, importContact, importDa
         <SubContainer className="table">
           <CustomTable
             hideCheckbox={true}
-            headerColor={"#051316"}
+            headerColor={"#185968"}
             backgroundColor={bg}
             radius={"16px"}
             hidePagination={true}

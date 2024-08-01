@@ -6,7 +6,7 @@ import { RootState } from "../../store";
 const CustButton = styled.button<{ theme?: string, disabled: boolean }>`
   border-radius: 20px;
   padding: 8px 12px;
-  background-color: ${(props) => (props.theme == "light" ? "#224D57" : "#0E39D3")};
+  background-color: ${(props) => (props.theme == "light" ? "#224D57" : "#27798b")};
   color:  ${(props) => (props.disabled ? "gray" : "white")};
   border: none;
 `;

@@ -16,7 +16,7 @@ const ParagraphTitle = styled.p<{ $theme?: string }>`
   text-align: left;
   flex-grow: 1;
   color: ${(props) =>
-    props.$theme == "light" ? "#051316" : "white"};
+    props.$theme == "light" ? "#185968" : "white"};
 `;
 
 const DownloadButton = styled.button`
@@ -117,7 +117,7 @@ function ImportStep1({ setActiveTopBar }: { setActiveTopBar?: any }) {
     },
   ];
 
-  const bg = theme === "light" ? "#C9D5D8" : "#0A2328"
+  const bg = theme === "light" ? "#C9D5D8" : "#1f6b7a"
   return (
     <ImportStep1Container>
       <ImportStep1SubContainer>
@@ -132,7 +132,7 @@ function ImportStep1({ setActiveTopBar }: { setActiveTopBar?: any }) {
       </ImportStep1SubContainer>
       <TableContainer>
         <CustomTable
-          headerColor={"#051316"}
+          headerColor={"#185968"}
           backgroundColor={bg}
           radius={"20px"}
           hidePagination={true}

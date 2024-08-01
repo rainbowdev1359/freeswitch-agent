@@ -6,28 +6,28 @@ import { outcomeTypes } from "../data/date";
 import { useTranslation } from 'react-i18next';
 
 const DropMod = styled.select <{ theme: string }>`
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0f2e35"};
-  border: ${(props) => props.theme === "light" ? "1px solid #0F2E35" : "none"};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#27798b"};
+  border: ${(props) => props.theme === "light" ? "1px solid #27798b" : "none"};
   width: 100%;
   border-radius: 8px;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
   padding: 0 8px;
   height: 40px;
   font-size: 14px;
   font-weight: bold;
   &:hover {
-    background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#00b7df"};
-    color: black;
+    background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#224D57"};
+    color: white;
   }
   &:active {
-    background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#00b7df"};
-    color: black;
+    background-color: ${(props) => props.theme === "light" ? "#FEFEFE" : "#224D57"};
+    color: white;
   }
 `;
 
 const DropMenu = styled.option <{ theme: string }>`
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0f2e35"};
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#27798b"};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;

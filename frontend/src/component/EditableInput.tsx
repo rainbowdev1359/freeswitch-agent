@@ -6,9 +6,9 @@ import { RootState } from "../store";
 
 const InputContainer = styled.div<{ $theme?: string }>`
   display:flex;
-  background: ${props => props.$theme == "light" ? "linear-gradient(180deg, #C9D5D8 0%, #96ADB3  77.4%)" : "linear-gradient(180deg, #0B2227 0%, #09181B 77.4%)"};
-  border: 1px solid #0F2E35
-  color: #96ADB3;
+  background: ${props => props.$theme == "light" ? "linear-gradient(180deg, #C9D5D8 0%, #d3dcdf  77.4%)" : "linear-gradient(180deg, #27798b 0%, #09181B 77.4%)"};
+  border: 1px solid #27798b
+  color: #d3dcdf;
   margin-right:10px;
   border-radius:10px;
   padding:8px;
@@ -21,7 +21,7 @@ const Input = styled.input`
   font-size: 16px;
   font-weight: 500;
   line-height: 20.4px;
-  color: #96ADB3;
+  color: #d3dcdf;
   border:none;
   outline:none;
 `

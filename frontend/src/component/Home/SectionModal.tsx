@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const callSteps = [
   { name: "Intro", color: "#F0B723", active: true },
   { name: "Interest", color: "#E4F150", active: true },
-  { name: "Info", color: "#00B7DF", active: true },
+  { name: "Info", color: "#224D57", active: true },
   { name: "Closing", color: "#0FBC0C", active: true },
 ];
 
@@ -36,15 +36,15 @@ const CallStep = styled.div<{
 `;
 
 const SectionParent = styled.div<{ theme: string }>`
-  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #0b2227 0%, #09181b 77.4%)"};
+  background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #27798b 0%, #09181b 77.4%)"};
   border-radius: 20px;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
-  border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
+  border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
 `;
 
 const DataRow = styled(Row) <{ theme: string }>`
   padding: 3px;
-  border:${(props) => props.theme === "light" ? "3px solid #9ABCC4" : "3px solid #0f2e35"};
+  border:${(props) => props.theme === "light" ? "3px solid #9ABCC4" : "3px solid #27798b"};
   border-radius: 30px;
   display: flex;
   flex-direction: row;

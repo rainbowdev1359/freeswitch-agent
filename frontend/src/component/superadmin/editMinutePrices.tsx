@@ -57,8 +57,8 @@ function EditMinutePrices() {
       cell: (info) => <p className="text-center mb-0">$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("total_cost_min", {
-      header: () => <p className="text-center mb-0" style={{ borderRadius: "12px", background: "#0A2328" }}>{t('Total Cost/min')}</p>,
-      cell: (info) => <p className="text-center mb-0 mx-1" style={{ borderRadius: "12px", background: "#0A2328" }}>$ {info.getValue()}</p>,
+      header: () => <p className="text-center mb-0" style={{ borderRadius: "12px", background: "#1f6b7a" }}>{t('Total Cost/min')}</p>,
+      cell: (info) => <p className="text-center mb-0 mx-1" style={{ borderRadius: "12px", background: "#1f6b7a" }}>$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("margins_percent", {
       header: () => <p className="text-center mb-0">{t('Margins %')}</p>,
@@ -69,12 +69,12 @@ function EditMinutePrices() {
       cell: (info) => <p className="text-center mb-0">$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("sale_price", {
-      header: () => <p className="text-center mb-0 mx-2" style={{ borderRadius: "12px", background: "#0A2328" }}>{t('Sale Price')}</p>,
-      cell: (info) => <p className="text-center mb-0 mx-2" style={{ borderRadius: "12px", background: "#0A2328" }}>$ {info.getValue()}</p>,
+      header: () => <p className="text-center mb-0 mx-2" style={{ borderRadius: "12px", background: "#1f6b7a" }}>{t('Sale Price')}</p>,
+      cell: (info) => <p className="text-center mb-0 mx-2" style={{ borderRadius: "12px", background: "#1f6b7a" }}>$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("vip_price", {
-      header: () => <p className="text-center mb-0 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>{t('VIP Price')}</p>,
-      cell: (info) => <p className="text-center mb-0 text-black mx-2" style={{ borderRadius: "12px", background: "#96ADB3" }}>$ {info.getValue()}</p>,
+      header: () => <p className="text-center mb-0 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>{t('VIP Price')}</p>,
+      cell: (info) => <p className="text-center mb-0 text-black mx-2" style={{ borderRadius: "12px", background: "#d3dcdf" }}>$ {info.getValue()}</p>,
     }),
   ];
 

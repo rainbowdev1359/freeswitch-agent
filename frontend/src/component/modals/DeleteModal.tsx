@@ -50,7 +50,7 @@ function DeleteModal(props: any) {
         <div className={`d-flex p-2  justify-content-between align-items-center`} style={{ width: '80%', margin: 'auto' }}>
           <p
             className={`flex-grow h-fit text-center ${theme == "light" ? "modal_title_light" : "modal_title"} `}
-            style={{ color: "#96ADB3" }}
+            style={{ color: "#d3dcdf" }}
           >
             {props.subTitle ? props.subTitle : t("If you delete it will be permanently deleted")}
           </p>

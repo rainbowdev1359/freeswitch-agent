@@ -21,7 +21,7 @@ const DateParagraph = styled.p`
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  color: #96adb3;
+  color: #d3dcdf;
 `;
 
 const DateButton = styled.div <{ color?: string, textcolor?: string }>`
@@ -43,13 +43,13 @@ const TabButtonRow = styled.div<{ $theme?: string }>`
   display: flex;
   padding: 4px 12px;
   border-radius: 16px;
-  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#0F2E35"};
+  background-color: ${(props) => props.$theme == "light" ? "#E5ECEE" : "#27798b"};
 `;
 
 // const Paragraph = styled.div<{ $theme?: string }>`
 //   margin-bottom: 0px;
 //   font-weight: 500;
-//   color:  ${(props) => (props.$theme == "light" ? "#0F2E35" : "#96ADB3")};
+//   color:  ${(props) => (props.$theme == "light" ? "#27798b" : "#d3dcdf")};
 // `;
 
 const SearchBtnContainer = styled.div`
@@ -68,8 +68,8 @@ const DateSelectButton = styled.div`
     justify-content:center;
     gap: 4px;
     border-radius: 24px;
-    color: #96ADB3;
-    background-color: #0F2E35;
+    color: #d3dcdf;
+    background-color: #27798b;
     padding: 0 16px;
     margin-bottom: 1rem;
 `
@@ -181,10 +181,10 @@ function Notification({ setUnreadNotis }: { isMonthSelector?: boolean, onApplyFi
             })}
 
             <div className='d-flex gap-2 mt-4'>
-                <DateButton textcolor='#0A2328' color='#96ADB3' onClick={() => onMakeReadHandler()}>
+                <DateButton textcolor='#1f6b7a' color='#d3dcdf' onClick={() => onMakeReadHandler()}>
                     Mark all as read
                 </DateButton>
-                <DateButton textcolor='#96ADB3' color='#0F2E35' onClick={() => onDeleteHandler()}>
+                <DateButton textcolor='#d3dcdf' color='#27798b' onClick={() => onDeleteHandler()}>
                     Delete notification
                 </DateButton>
             </div>

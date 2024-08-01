@@ -673,7 +673,7 @@ export function TemperaturePromptEditor({ openAIModal, temperature, interruption
                   step={0.1}
                   value={temperature}
                   onChange={(value) => saveTemperature(value)}
-                  color={["#C9D5D8", "#0f2e35"]}
+                  color={["#C9D5D8", "#27798b"]}
                   isFull={true}
                 />
               </Tooltip>
@@ -692,7 +692,7 @@ export function TemperaturePromptEditor({ openAIModal, temperature, interruption
                 step={1}
                 value={interruption}
                 onChange={(value) => saveInterruption(value)}
-                color={["#C9D5D8", "#0f2e35"]}
+                color={["#C9D5D8", "#27798b"]}
                 isFull={true}
               />
             </Tooltip>

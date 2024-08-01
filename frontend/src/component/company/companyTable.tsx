@@ -454,7 +454,7 @@ function CompanyTable() {
                 </div>
                 <div className="d-flex gap-0 flex-column">
                   <p className="mb-0">{t("Country")}</p>
-                  <DropdownButton color={["white", "#051316"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t("Country")} isFull={true} />
+                  <DropdownButton color={["white", "#185968"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t("Country")} isFull={true} />
                 </div>
                 <div className="d-flex gap-0 flex-column">
                   <p className="mb-0">{t("Amount spent")}</p>
@@ -491,7 +491,7 @@ function CompanyTable() {
                 <div className="d-flex gap-2 flex-wrap">
                   <div className="d-flex gap-1 flex-column" style={{ width: "48%" }}>
                     <p className="mb-2">{t("Country")}</p>
-                    <DropdownButton color={["white", "#051316"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t("Country")} isFull={true} />
+                    <DropdownButton color={["white", "#185968"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t("Country")} isFull={true} />
                   </div>
                   <div className="d-flex gap-1 flex-column" style={{ width: "48%" }}>
                     <p className="mb-2">{t("City")}</p>
@@ -534,7 +534,7 @@ function CompanyTable() {
         children={
           <div className="d-flex flex-column gap-1">
             <div className="d-flex gap-0 flex-column">
-              <p className="mb-0 text-center" style={{ color: "#384b4f" }}>
+              <p className="mb-0 text-center" style={{ color: "#5f8086" }}>
                 {t("To avoid clash please edit the company you would like to duplicate.")}
               </p>
             </div>

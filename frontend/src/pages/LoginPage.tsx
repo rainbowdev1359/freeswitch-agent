@@ -81,9 +81,9 @@ function LoginPage() {
 
   return (
     <AuthenticationContainer $theme={theme}>
-      <ToastContainer />
+      {/* <ToastContainer /> */}
       <AuthenticationBox $theme={theme}>
-        <img src={theme === "light" ? "public/Epic Caller AI@300x.png" : "public/Epic Caller AI (2).png"} style={{width: "95px", height: "80px"}}/>
+        {/* <img src={theme === "light" ? "public/Epic Caller AI@300x.png" : "public/Epic Caller AI (2).png"} style={{width: "95px", height: "80px"}}/> */}
         <AuthTitle title="LOGIN" description="" />
         <AuthInput
           placeholder="Email"
@@ -101,7 +101,7 @@ function LoginPage() {
         />
 
         <ContinueButton text="LOG IN" onclick={handleLogin} />
-        <GoogleSignInButton />
+        {/* <GoogleSignInButton /> */}
 
         <div className='d-flex justify-content-between align-items-center w-full px-2'>
           <div className='d-flex flex-row align-items-center'>

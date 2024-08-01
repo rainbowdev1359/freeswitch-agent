@@ -117,11 +117,11 @@ export function Controller({ selected, addNewAgent }: { selected?: boolean, addN
                 </div>
                 <div className="col-12 col-md-6">
                   <Title theme={theme} className="my-2">{t('Agent Voice')}</Title>
-                  <DropdownObjectButton color={["white", "#051316"]} options={voiceList} onSelect={handleVoiceSelect} isFull={true} defaultValue={voiceID} />
+                  <DropdownObjectButton color={["white", "#185968"]} options={voiceList} onSelect={handleVoiceSelect} isFull={true} defaultValue={voiceID} />
                 </div>
                 <div className="col-12 col-md-6">
                   <Title theme={theme} className="my-2">{t('Agent language')}</Title>
-                  <DropdownObjectButton color={["white", "#051316"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={language} />
+                  <DropdownObjectButton color={["white", "#185968"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={language} />
                 </div>
               </div>}
             <div className="d-flex gap-2 flex-column mt-2">

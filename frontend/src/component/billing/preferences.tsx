@@ -80,7 +80,7 @@ export function Preferences() {
               <MPTitle theme={theme}>{t('Primary business address')}</MPTitle>
               <MPParagraph className="mb-0">{t('This is the address of the company purchasing should match the credit card.')}</MPParagraph>
               <MPTitle theme={theme}>{t('Country')}</MPTitle>
-              <DropdownButton color={["white", "#051316"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t('Country')} isFull={true} />
+              <DropdownButton color={["white", "#185968"]} options={countryLists.map(item => item.title)} onSelect={handleOutcomeSelect} placeholder={t('Country')} isFull={true} />
             </div>
             <div className="d-flex mb-3 flex-column">
               <MPTitle theme={theme} className="mb-2">{t('Address line 1')}</MPTitle>

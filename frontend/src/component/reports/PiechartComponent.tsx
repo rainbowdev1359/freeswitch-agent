@@ -3,7 +3,7 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 
-const COLORS = ['#E4F150', '#F0B723', '#0FBC0C', '#00B7DF'];
+const COLORS = ['#E4F150', '#F0B723', '#0FBC0C', '#224D57'];
 
 const renderActiveShape = (props: any) => {
     const theme = useSelector((state: RootState) => state.theme.theme);
@@ -18,7 +18,7 @@ const renderActiveShape = (props: any) => {
 
     return (
         <g>
-            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={theme === "light" ? "#0F2E35" : "#96adb3"}>
+            <text x={cx} y={cy} dy={8} textAnchor="middle" fill={theme === "light" ? "#27798b" : "#d3dcdf"}>
                 {payload.name}
             </text>
             <Sector
@@ -40,7 +40,7 @@ const renderActiveShape = (props: any) => {
                 fill={fill}
             />
             <foreignObject x={ex + (cos >= 0 ? -5 : -1) * 12} y={ey - 12} width="100" height="50">
-                <div style={{ background: "#051316", color: "white", textAlign: "center", borderRadius: "4px" }}>
+                <div style={{ background: "#185968", color: "white", textAlign: "center", borderRadius: "4px" }}>
                     <span>{`${value}% Success`}</span><br />
                     <span>{date}</span>
                 </div>

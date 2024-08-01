@@ -10,20 +10,20 @@ export const createAgentOptions = [
         label: "Sales",
         value: "Sales",
       },
-      {
-        id: 2,
-        title: "Customer service",
-        desc: "Perfect for clients needing support for their customers. This option involves managing both inbound issues and outbound follow-ups to ensure customer satisfaction and resolve any service-related concerns.",
-        label: "customerService",
-        value: "cservice",
-      },
-      {
-        id: 3,
-        title: "Secretary",
-        desc: "Suitable for clients requiring assistance with administrative tasks. Our agents can manage appointments, handle call routing, and provide general information, acting as the first point of contact for your business.",
-        label: "secretary",
-        value: "secretary",
-      },
+      // {
+      //   id: 2,
+      //   title: "Customer service",
+      //   desc: "Perfect for clients needing support for their customers. This option involves managing both inbound issues and outbound follow-ups to ensure customer satisfaction and resolve any service-related concerns.",
+      //   label: "customerService",
+      //   value: "cservice",
+      // },
+      // {
+      //   id: 3,
+      //   title: "Secretary",
+      //   desc: "Suitable for clients requiring assistance with administrative tasks. Our agents can manage appointments, handle call routing, and provide general information, acting as the first point of contact for your business.",
+      //   label: "secretary",
+      //   value: "secretary",
+      // },
       {
         id: 4,
         title: "Feedback Collection Agent",
@@ -31,20 +31,20 @@ export const createAgentOptions = [
         label: "fca",
         value: "fca",
       },
-      {
-        id: 5,
-        title: "Institutional Agent",
-        desc: "Best for clients dealing with institutional, educational, or corporate partners. These agents are equipped to handle formal inquiries, provide detailed information, and facilitate communication between organizations.",
-        label: "iagent",
-        value: "iagent",
-      },
-      {
-        id: 6,
-        title: "Custom",
-        desc: "No training whatsoever has been made for this mode, it is a blank canvas.",
-        label: "iagent",
-        value: "iagent",
-      }
+      // {
+      //   id: 5,
+      //   title: "Institutional Agent",
+      //   desc: "Best for clients dealing with institutional, educational, or corporate partners. These agents are equipped to handle formal inquiries, provide detailed information, and facilitate communication between organizations.",
+      //   label: "iagent",
+      //   value: "iagent",
+      // },
+      // {
+      //   id: 6,
+      //   title: "Custom",
+      //   desc: "No training whatsoever has been made for this mode, it is a blank canvas.",
+      //   label: "iagent",
+      //   value: "iagent",
+      // }
     ],
     btntext: "Create agent"
   },

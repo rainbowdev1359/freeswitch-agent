@@ -76,14 +76,14 @@ function AgentModal({ agent, onclick, theme }: {
         <AParagraph $theme={theme} className="text-center">{t('Follow up clients')}</AParagraph>
         <Row className="justify-content-center gap-2 py-2">
           <Row $theme={theme} $minute_container>
-            <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/profile_delete.svg" />
+            <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/profile_delete.svg" />
             <AParagraph $theme={theme} className="text-bold">
               21
             </AParagraph>
           </Row>
-          <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/transfer.svg" />
+          <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/transfer.svg" />
           <Row $theme={theme} $minute_container>
-            <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/profile_checked.svg" />
+            <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/profile_checked.svg" />
             <AParagraph $theme={theme} className="text-bold">
               21
             </AParagraph>

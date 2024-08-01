@@ -16,16 +16,16 @@ const Th = styled.th<{ $width?: number; theme: string, color?: string }>`
   width: ${(props) => (props.$width ? `${props.$width}%` : "fit-content")};
   min-width: 100px;
   background-color: ${(props) => (props.theme === "light" ? "#E5ECEE" : `${props.color}`)};
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "")};
 `;
 
 const PaginationButton = styled.button<{ $active?: boolean, theme: string }>`
   padding: 8px;
-  background-color: ${(props) => (props.$active ? (props.theme == "light" ? "#C9D5D8" : "#0a2328") : "transparent")};
+  background-color: ${(props) => (props.$active ? (props.theme == "light" ? "#C9D5D8" : "#1f6b7a") : "transparent")};
   border: none;
   width: 40px;
   min-width: fit-content;
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : " #c9d5d8")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : " #c9d5d8")};
   border-radius: 12px;
   gap: 4px;
   display: flex;
@@ -49,7 +49,7 @@ const TableContainer = styled.div<{ $maxwidth?: number }>`
 `;
 
 const Td = styled.tr<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "white")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "white")};
 `;
 
 function CustomTable({

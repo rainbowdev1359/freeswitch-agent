@@ -19,13 +19,13 @@ export function SectionReport() {
       </div >
       <div className="d-flex row p-4">
         <div className="col-12 col-md-6 col-lg-3">
+          <ReportComponent type="bar" title={t("AI Performance score")} />
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
           <ReportComponent type="pie" title={t("Top Agents")} />
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <ReportComponent type="pie" title={t("Bottom agents")} />
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <ReportComponent type="bar" title={t("AI Performance score")} />
         </div>
         <div className="col-12 col-md-6 col-lg-3">
           <ReportComponent type="table" title={null} />

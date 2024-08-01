@@ -60,7 +60,7 @@ export function AgentCallSetting({ agent }: { agent: agentCalls }) {
           className="d-flex flex-row align-items-center gap-2"
           theme={theme}
         >
-          <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/clockIcon.svg" />
+          <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/clockIcon.svg" />
 
           <AgentParagraph theme={theme}>{agent.minutesTalked}</AgentParagraph>
         </AgentRow>
@@ -70,7 +70,7 @@ export function AgentCallSetting({ agent }: { agent: agentCalls }) {
             className="d-flex flex-row align-items-center gap-1"
             theme={theme}
           >
-            <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/profile_delete.svg" />
+            <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/profile_delete.svg" />
             <AgentParagraph theme={theme} className="text-bold">{agent.client1}</AgentParagraph>
           </AgentRow>
 
@@ -81,7 +81,7 @@ export function AgentCallSetting({ agent }: { agent: agentCalls }) {
             theme={theme}
             className="d-flex flex-row align-items-center gap-1"
           >
-            <ImageRender color={theme == "light" ? "#0F2E35" : "#E7E9EA"} fileName="/profile_checked.svg" />
+            <ImageRender color={theme == "light" ? "#27798b" : "#E7E9EA"} fileName="/profile_checked.svg" />
             <AgentParagraph theme={theme} className="text-bold">{agent.client2}</AgentParagraph>
           </AgentRow>
         </div>

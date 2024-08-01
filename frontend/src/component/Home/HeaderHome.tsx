@@ -7,12 +7,12 @@ import { RootState } from "../../store";
 import Toggle from "../Toggle";
 
 const H1Styled = styled.h4<{ theme: string }>`
-  color: ${(props) => (props.theme === "light" ? "#051316" : "#96adb3")};
+  color: ${(props) => (props.theme === "light" ? "#185968" : "#d3dcdf")};
   font-weight: bold;
 `;
 const DivStyled = styled.div<{ theme: string }>`
   border-bottom: ${(props) =>
-    props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+    props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
   width: 100%;
   padding: 0px 0px 0px 50px;
   @media (max-width: 993px) {
@@ -22,7 +22,7 @@ const DivStyled = styled.div<{ theme: string }>`
 `;
 
 const PModified = styled.p<{ theme: string }>`
-  color: ${(props) => (props.theme == "light" ? "#0F2E35" : "#384b4f")};
+  color: ${(props) => (props.theme == "light" ? "#27798b" : "#5f8086")};
   font-weight: bold;
 `;
 const CustomRow = styled.div`

@@ -37,14 +37,14 @@ import ImportContact from "./pages/ImportContact";
 
 const SideBarDiv = styled.div<{ theme: string }>`
   background-color: ${(props) =>
-    props.theme === "light" ? "#FEFEFE" : "#0b2227"};
+    props.theme === "light" ? "#FEFEFE" : "#27798b"};
 `;
 const ParentCol = styled(Col) <{ theme: string }>`
   background-color: ${(props) =>
-    props.theme === "light" ? "#FEFEFE" : "#051316"};
+    props.theme === "light" ? "#FEFEFE" : "#185968"};
   padding-inline: 0px;
   border-left: ${(props) =>
-    props.theme === "light" ? "2px solid #96ADB3" : "2px solid #0f2e35"};
+    props.theme === "light" ? "2px solid #d3dcdf" : "2px solid #27798b"};
   overflow-x: hidden;
 `;
 const AppContainer = styled.div`
@@ -172,23 +172,23 @@ function App() {
                       </ProtectedRoute>
                     }
                   />
-                  <Route
+                  {/* <Route
                     path="/campaign"
                     element={
                       <ProtectedRoute>
                         <CampaignPage isSidebarOpened={isSidebarOpened} />
                       </ProtectedRoute>
                     }
-                  />
+                  /> */}
 
-                  <Route
+                  {/* <Route
                     path="/company"
                     element={
                       <ProtectedRoute>
                         <CompanyPage isSidebarOpened={isSidebarOpened} />
                       </ProtectedRoute>
                     }
-                  />
+                  /> */}
                   <Route
                     path="/knowledge"
                     element={
@@ -197,7 +197,7 @@ function App() {
                       </ProtectedRoute>
                     }
                   />
-                  <Route
+                  {/* <Route
                     path="/superadmin"
                     element={
                       <ProtectedRoute>
@@ -236,7 +236,7 @@ function App() {
                         <EditPackagePage isSidebarOpened={isSidebarOpened} />
                       </ProtectedRoute>
                     }
-                  />
+                  /> */}
                   <Route
                     path="/billing"
                     element={

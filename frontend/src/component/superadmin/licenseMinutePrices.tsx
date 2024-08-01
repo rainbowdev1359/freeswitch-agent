@@ -32,8 +32,8 @@ function LicenseMinutePrices() {
       cell: (info) => <p className="text-center mx-2 py-2">{info.getValue()}</p>,
     }),
     columnHelper.accessor("cost_min", {
-      header: () => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#0A2328" }}>{t('Cost/min')}</p>,
-      cell: (info) => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#0A2328" }}>$ {info.getValue()}</p>,
+      header: () => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#1f6b7a" }}>{t('Cost/min')}</p>,
+      cell: (info) => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#1f6b7a" }}>$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("essential_launchpad", {
       header: () => <p className="text-center mx-2 py-2 text-black" style={{ borderRadius: "12px", background: "#A1D9FC" }}>{t('Essential Launchpad')}</p>,
@@ -48,8 +48,8 @@ function LicenseMinutePrices() {
       cell: (info) => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#0673DC" }}>$ {info.getValue()}</p>,
     }),
     columnHelper.accessor("elite_performance", {
-      header: () => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#0E39D3" }}>{t('Elite Performance')}</p>,
-      cell: (info) => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#0E39D3" }}>$ {info.getValue()}</p>,
+      header: () => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#27798b" }}>{t('Elite Performance')}</p>,
+      cell: (info) => <p className="text-center mx-2 py-2" style={{ borderRadius: "12px", background: "#27798b" }}>$ {info.getValue()}</p>,
     }),
   ];
 

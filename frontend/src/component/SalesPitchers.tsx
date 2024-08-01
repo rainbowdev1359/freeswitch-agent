@@ -20,14 +20,14 @@ const TableParent = styled.table`
 const TheadMade = styled.tr<{ theme: string }>`
   border-radius: 20px;
   color: #c9d5d8;
-  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#0f2e35"};
+  background-color: ${(props) => props.theme === "light" ? "#C9D5D8" : "#27798b"};
   padding: 20px;
 `;
 
 const TRrMade = styled.tr<{ theme: string }>`
-  background-color: ${(props) => (props.theme === "light" ? "" : "#0b2227")};
-  color: ${(props) => (props.theme === "light" ? "#0F2E35" : "inherit")};
-  border-bottom: 1px solid #0f2e35;
+  background-color: ${(props) => (props.theme === "light" ? "" : "#27798b")};
+  color: ${(props) => (props.theme === "light" ? "#27798b" : "inherit")};
+  border-bottom: 1px solid #27798b;
 `;
 const Th = styled.th<{ theme: string }>`
   padding: 10px;
@@ -36,7 +36,7 @@ const Th = styled.th<{ theme: string }>`
     padding: 5px;
   }
   background-color: transparent;
-  color: ${(props) => (props.theme === "dark" ? "#C9D5D8" : "#0f2e35")};
+  color: ${(props) => (props.theme === "dark" ? "#C9D5D8" : "#27798b")};
 `;
 const Td = styled.td`
   padding-top: 5px;

@@ -33,7 +33,7 @@ export function BarChartComponent() {
           <XAxis dataKey="name" padding={{ left: 5, right: 5 }} />
           <Tooltip />
           <YAxis type="number" domain={[0, 100]} hide />
-          <Bar dataKey="value" fill="#00B7DF" background={{ fill: '#0F2E35' }} maxBarSize={100} />
+          <Bar dataKey="value" fill="#224D57" background={{ fill: '#27798b' }} maxBarSize={100} />
         </BarChart>
       </ResponsiveContainer>
       <div className="d-flex row">

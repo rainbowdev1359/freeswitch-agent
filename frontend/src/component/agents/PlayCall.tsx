@@ -68,7 +68,7 @@ function PlayCall() {
                     barRadius={100}
                     barWidth={3}
                     waveColor={"#0E2B31"}
-                    progressColor="#96ADB3"
+                    progressColor="#d3dcdf"
                     url={recordUrl}
                     onReady={onReady}
                     onPlay={() => setIsPlaying(true)}

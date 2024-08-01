@@ -69,7 +69,7 @@ function AgentRates({cancelModal}: any) {
         <div className="d-flex flex-wrap gap-2">
           <div className="d-flex gap-0 flex-column">
             <Title theme={theme}>{t('Country')}</Title>
-            <DropdownButton color={["white", "#051316"]} options={countryLists.map(item => item.title)} onSelect={handleCountrySelect} placeholder={t('Country')} isFull={true} />
+            <DropdownButton color={["white", "#185968"]} options={countryLists.map(item => item.title)} onSelect={handleCountrySelect} placeholder={t('Country')} isFull={true} />
           </div>
         </div>
       </div>

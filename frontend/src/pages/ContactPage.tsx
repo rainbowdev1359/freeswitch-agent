@@ -18,7 +18,7 @@ export function ContactPage({ isSidebarOpened, }: { isSidebarOpened: boolean; })
         <Toggle />
       </DivStyled>
       <PageContainer>
-        {isSidebarOpened && <AgentRow />}
+        {/* {isSidebarOpened && <AgentRow />} */}
         <ContactRecordTable />
       </PageContainer>
     </Col>

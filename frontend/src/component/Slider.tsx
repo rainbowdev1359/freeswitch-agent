@@ -13,7 +13,7 @@ const StyledSlider = styled.input<{ theme: string, color?: string[] }>`
   width: 300px;
   height: 8px;
   border-radius: 5px;
-  background: ${(props) => props.theme === 'light' ? props.color ? props.color[0] : "#C9D5D8" : props.color ? props.color[1] : "#0f2e35"};
+  background: ${(props) => props.theme === 'light' ? props.color ? props.color[0] : "#C9D5D8" : props.color ? props.color[1] : "#27798b"};
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -24,7 +24,7 @@ const StyledSlider = styled.input<{ theme: string, color?: string[] }>`
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${(props) => props.theme === 'light' ? "#0F2E35" : "#96adb3"};
+    background: ${(props) => props.theme === 'light' ? "#27798b" : "#d3dcdf"};
     cursor: pointer;
   }
 
@@ -32,7 +32,7 @@ const StyledSlider = styled.input<{ theme: string, color?: string[] }>`
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${(props) => props.theme === 'light' ? "#0F2E35" : "#96adb3"};
+    background: ${(props) => props.theme === 'light' ? "#27798b" : "#d3dcdf"};
     cursor: pointer;
   }
 `;

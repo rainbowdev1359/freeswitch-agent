@@ -24,7 +24,7 @@ th {
   color: #C9D5D8;
   padding: 2px 6px;
 
-  background-color: #0A2328;
+  background-color: #1f6b7a;
 }
 
 td {
@@ -39,7 +39,7 @@ input[type="checkbox"] {
   background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid #96ADB3;
+  border: 1px solid #d3dcdf;
   display: flex;
   outline: none;
   align-items: center;
@@ -55,7 +55,7 @@ input[type="checkbox"]:after {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #00B7DF;
+  background-color: #224D57;
   border: none;
 }
 

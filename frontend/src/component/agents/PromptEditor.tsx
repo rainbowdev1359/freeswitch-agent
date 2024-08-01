@@ -340,7 +340,7 @@ function PromptEditor() {
             <Menu style={{ marginTop: "20px" }} $theme={theme}>
               <div className="d-flex col-12 col-md-6 mb-3 gap-0 flex-column w-full">
                 <Title theme={theme}>{t('Select language')}</Title>
-                <DropdownObjectButton color={["white", "#051316"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={agentLanguage} />
+                <DropdownObjectButton color={["white", "#185968"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={agentLanguage} />
               </div>
               <PERow className="justify-content-start gap-2 py-2 " onClick={() => setExportModalShow(true)}>
                 <img src={theme == "light" ? "/export-light.svg" : "/export.svg"} alt="" width={20} />
@@ -512,12 +512,12 @@ function PromptEditor() {
 
             <div className="d-flex col-12 col-md-6 mb-3 gap-0 flex-column">
               <Title theme={theme}>{t('Agent Voice')}</Title>
-              <DropdownObjectButton color={["white", "#051316"]} options={voiceList} onSelect={handleVoiceSelect} isFull={true} defaultValue={agentVoice} />
+              <DropdownObjectButton color={["white", "#185968"]} options={voiceList} onSelect={handleVoiceSelect} isFull={true} defaultValue={agentVoice} />
             </div>
 
             <div className="d-flex col-12 col-md-6 mb-3 gap-0 flex-column">
               <Title theme={theme}>{t('Agent language')}</Title>
-              <DropdownObjectButton color={["white", "#051316"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={agentLanguage} />
+              <DropdownObjectButton color={["white", "#185968"]} options={agentLangList} onSelect={handleLanguageSelect} isFull={true} defaultValue={agentLanguage} />
             </div>
 
             <DragAndDrop

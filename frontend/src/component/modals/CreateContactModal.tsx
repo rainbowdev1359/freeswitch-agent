@@ -15,7 +15,7 @@ const InputRow = styled.div<{ $theme?: string }>`
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
-  background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#051316"};
+  background-color: ${(props) => props.$theme === "light" ? "#FEFEFE" : "#185968"};
 `;
 
 const Input = styled.input<{ $theme?: string }>`
@@ -23,7 +23,7 @@ const Input = styled.input<{ $theme?: string }>`
   background-color: transparent;
   border: none;
   outline: none;
-  color: ${(props) => props.$theme === "light" ? "#051316" : "white"};
+  color: ${(props) => props.$theme === "light" ? "#185968" : "white"};
 `;
 
 interface CreateContactModalProps {
@@ -166,7 +166,7 @@ const CreateContactModal: React.FC<CreateContactModalProps> = (props) => {
           <p className="mb-0">{t("Campaign")}</p>
           <InputRow className="p-0" $theme={theme}>
             <DropdownButton
-              color={["#E5ECEE", "#051316"]}
+              color={["#E5ECEE", "#185968"]}
               options={["Epic Caller AI"]} // Provide actual options here
               onSelect={handleCampaignSelect}
               placeholder={t("Campaign")}
@@ -178,7 +178,7 @@ const CreateContactModal: React.FC<CreateContactModalProps> = (props) => {
           <p className="mb-0">{t("Country")}</p>
           <InputRow className="p-0" $theme={theme}>
             <DropdownButton
-              color={["#E5ECEE", "#051316"]}
+              color={["#E5ECEE", "#185968"]}
               options={["Untied States", "United Kingdom"]} // Provide actual options here
               onSelect={handleCountrySelect} // Change this if a different handler is needed
               placeholder={t("Country")}

@@ -22,15 +22,15 @@ const InputMod = styled.input<{ $theme?: string }>`
 
   font-size: 17px;
   background-color: ${(props) =>
-    props.$theme == "light" ? "#E5ECEE" : "#051316"};
+    props.$theme == "light" ? "#E5ECEE" : "#185968"};
   outline: none;
   border-radius: 8px;
-  color: #96adb3;
+  color: #d3dcdf;
   @media (max-width: 600px) {
     width: 100%;
   }
   border-radius: 8px;
-  color: #96adb3;
+  color: #d3dcdf;
 `;
 
 function BlueButton(props: any) {

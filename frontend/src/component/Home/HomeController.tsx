@@ -36,18 +36,18 @@ export function HomeController() {
       $selected
       className="d-flex  gap-2 flex-row  py-4 px-2"
     >
-      <ParentButton $theme={theme} className="d-flex flex-grow-1 gap-2">
+      {/* <ParentButton $theme={theme} className="d-flex flex-grow-1 gap-2">
         <ContactRecordLinkP $theme={theme} className=" text-center py-2" onClick={() => navigate("/ticket")}>
           <img src={"/download.svg"} alt="" />
           <UnderLineSpan>
             {t("Submit a ticket")}
           </UnderLineSpan>
         </ContactRecordLinkP>
-      </ParentButton>
+      </ParentButton> */}
 
       <NotificationDrop action={<Notification setUnreadNotis={setUnreadNotis} />} name={
         <div className="position-relative">
-          <ImageRender fileName="/notification.svg" color={theme == "light" ? "#0F2E35" : "#96ADB3"} />
+          <ImageRender fileName="/notification.svg" color={theme == "light" ? "#27798b" : "#d3dcdf"} />
           {unreadNotis > 0 && <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{unreadNotis}</span>}
         </div>
 

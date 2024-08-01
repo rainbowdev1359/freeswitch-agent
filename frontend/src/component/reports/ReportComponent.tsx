@@ -13,10 +13,10 @@ const SectionParent = styled.div<{ theme: string }>`
     justify-content: space-between;
     height: 100%;
     flex-direction: column;
-    background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #0b2227 0%, #09181b 77.4%)"};
+    background: ${(props) => props.theme === "light" ? "linear-gradient(#E6EDEF, #EDEFE6)" : "linear-gradient(180deg, #27798b 0%, #09181b 77.4%)"};
     border-radius: 20px;
-    color: ${(props) => (props.theme === "light" ? "#0F2E35" : "#96adb3")};
-    border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #0f2e35"};
+    color: ${(props) => (props.theme === "light" ? "#27798b" : "#d3dcdf")};
+    border: ${(props) => props.theme === "light" ? "1px solid #9ABCC4" : "1px solid #27798b"};
 `;
 
 const data = [

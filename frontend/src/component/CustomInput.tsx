@@ -7,16 +7,16 @@ import styled from "styled-components";
 const CustomCheckBox = styled.div<{ $selected?: boolean; $theme?: string }>`
   padding: 8px 15px;
   border-radius: 8px;
-  background-color: ${(props) => props.$theme === "light" ? "#E5ECEE !important" : "#051316 !important"};
-  color: ${(props) => (props.$theme === "light" ? "#0A2328" : "white")};
-  border: ${(props) => (props.$selected ? "0.5px solid #00B7DF" : "none")};
+  background-color: ${(props) => props.$theme === "light" ? "#E5ECEE !important" : "#185968 !important"};
+  color: ${(props) => (props.$theme === "light" ? "#1f6b7a" : "white")};
+  border: ${(props) => (props.$selected ? "0.5px solid #224D57" : "none")};
   height: 100%;
 `;
 
 const NotiCustomCheckBox = styled.div<{ $selected?: boolean; $theme?: string }>`
   padding: 8px;
   border-radius: 8px;
-  color: ${(props) => (props.$theme === "light" ? "#0A2328" : "white")};
+  color: ${(props) => (props.$theme === "light" ? "#1f6b7a" : "white")};
 `;
 
 function CustomInput({
@@ -110,9 +110,9 @@ export function NotiCustomInput({
         checked={selected.includes(value)}
         onChange={handleSelection}
       />
-      {!isRead && <span className="rounded-circle" style={{ backgroundColor: "#96ADB3", width: "12px", height: "12px", margin: "auto" }} />}
+      {!isRead && <span className="rounded-circle" style={{ backgroundColor: "#d3dcdf", width: "12px", height: "12px", margin: "auto" }} />}
       <div>
-        <label htmlFor={value} style={{ borderBottom: "1px solid #0f2e35", paddingBottom: "8px" }} onClick={() => handleShowSelection(value)}>{children}</label>
+        <label htmlFor={value} style={{ borderBottom: "1px solid #27798b", paddingBottom: "8px" }} onClick={() => handleShowSelection(value)}>{children}</label>
       </div>
     </NotiCustomCheckBox>
   );
