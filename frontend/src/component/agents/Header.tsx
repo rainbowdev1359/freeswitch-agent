@@ -14,7 +14,7 @@ export function Header({ hideSearch }: { hideSearch?: boolean }) {
     <DivStyled className="px-5 py-1 d-flex flex-row justify-content-between">
       <Col >
         <H1Styled>Welcome {user}</H1Styled>
-        <PModified>September 12, 2024</PModified>
+        {/* <PModified>September 12, 2024</PModified> */}
       </Col>
 
       {!hideSearch && (

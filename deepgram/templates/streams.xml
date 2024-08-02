@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Response>
+  <Connect>
+    <Stream url="wss://fee7-54-185-78-240.ngrok-free.app/streams">
+      <Parameter name="aCustomParameter" value="aCustomValue that was set in TwiML" />
+    </Stream>
+  </Connect>
+</Response>

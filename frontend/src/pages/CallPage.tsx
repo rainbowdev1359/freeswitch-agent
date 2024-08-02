@@ -18,7 +18,7 @@ export function CallPage({ isSidebarOpened }: { isSidebarOpened: boolean }) {
       >
         <div>
           <H1Styled theme={theme}>Welcome {user}</H1Styled>
-          <PModified theme={theme}>September 12, 2024</PModified>
+          {/* <PModified theme={theme}>September 12, 2024</PModified> */}
         </div>
         <Toggle />
       </DivStyled>

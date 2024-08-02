@@ -15,7 +15,7 @@ export function LicenseMinutePricesPage({ isSidebarOpened }: { isSidebarOpened: 
       <DivStyled theme={theme} className="px-5  justify-content-between d-flex align-items-center py-1" >
         <div>
           <H1Styled theme={theme}>Welcome {user}</H1Styled>
-          <PModified theme={theme}>September 12, 2024</PModified>
+          {/* <PModified theme={theme}>September 12, 2024</PModified> */}
         </div>
         <Toggle />
       </DivStyled>

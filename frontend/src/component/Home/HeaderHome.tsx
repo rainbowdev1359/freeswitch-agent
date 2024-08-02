@@ -40,7 +40,7 @@ export function HeaderHome() {
     >
       <CustomRow className="">
         <H1Styled theme={theme}>Welcome {user}</H1Styled>
-        <PModified theme={theme}>September 12, 2024</PModified>
+        {/* <PModified theme={theme}>September 12, 2024</PModified> */}
       </CustomRow>
       <div className="d-flex flex-row gap-2 align-items-center px-3">
         <HomeController />

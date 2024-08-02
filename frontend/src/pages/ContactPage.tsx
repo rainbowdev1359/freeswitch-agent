@@ -13,7 +13,7 @@ export function ContactPage({ isSidebarOpened, }: { isSidebarOpened: boolean; })
       <DivStyled className="px-5  justify-content-between d-flex align-items-center py-1">
         <div>
           <H1Styled>Welcome {user}</H1Styled>
-          <PModified>September 12, 2024</PModified>
+          {/* <PModified>September 12, 2024</PModified> */}
         </div>
         <Toggle />
       </DivStyled>

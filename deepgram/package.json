@@ -1,0 +1,44 @@
+{
+  "name": "deepgram-streaming-voice-agent",
+  "version": "0.0.1",
+  "description": "Streaming Voice Agent Sample",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "dev1": "node server1.js",
+    "dev2": "node server2.js",
+    "dev3": "node server3.js",
+    "dev4": "node server4.js",
+    "dev5": "node server5.js",
+    "dev6": "node server6.js",
+    "dev7": "node server7.js",
+    "dev8": "node server8.js",
+    "dev9": "node server9.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@deepgram/sdk": "^3.5.0",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "elevenlabs": "^0.10.0",
+    "express": "^4.19.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "fs": "^0.0.1-security",
+    "httpdispatcher": "^2.2.0",
+    "jssip": "^3.10.1",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.1.4",
+    "openai": "^4.53.2",
+    "twilio": "^5.2.2",
+    "websocket": "^1.0.35",
+    "winston": "^3.13.1",
+    "ws": "^8.18.0"
+  }
+}
