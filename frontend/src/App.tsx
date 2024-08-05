@@ -17,7 +17,6 @@ import PromptEditor from "./component/agents/PromptEditor";
 import PlayCall from "./component/agents/PlayCall";
 import SummaryCall from "./component/call/SummaryCall";
 import { useEffect, useState } from "react";
-import CompanyPage from "./pages/CompanyPage";
 import { useSelector } from "react-redux";
 import { RootState } from "./store";
 import LoginPage from "./pages/LoginPage";
@@ -34,6 +33,7 @@ import { BillingPage } from "./pages/BillingPage";
 import { ChangePlanPage } from "./pages/ChangePlanPage";
 import { ProtectedRoute } from './routes/protected-routes'
 import ImportContact from "./pages/ImportContact";
+import ModelTest from "./pages/modeltest";
 
 const SideBarDiv = styled.div<{ theme: string }>`
   background-color: ${(props) =>
@@ -172,23 +172,23 @@ function App() {
                       </ProtectedRoute>
                     }
                   />
-                  {/* <Route
+                  <Route
                     path="/campaign"
                     element={
                       <ProtectedRoute>
                         <CampaignPage isSidebarOpened={isSidebarOpened} />
                       </ProtectedRoute>
                     }
-                  /> */}
+                  />
 
-                  {/* <Route
-                    path="/company"
+                  <Route
+                    path="/modeltest"
                     element={
                       <ProtectedRoute>
-                        <CompanyPage isSidebarOpened={isSidebarOpened} />
+                        <ModelTest isSidebarOpened={isSidebarOpened} />
                       </ProtectedRoute>
                     }
-                  /> */}
+                  />
                   <Route
                     path="/knowledge"
                     element={

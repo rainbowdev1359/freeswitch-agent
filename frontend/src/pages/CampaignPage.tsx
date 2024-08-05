@@ -20,7 +20,7 @@ function CampaignPage({ isSidebarOpened }: { isSidebarOpened: boolean }) {
         <Toggle />
       </DivStyled>
       <PageContainer>
-        {isSidebarOpened && <AgentRow />}
+        {/* {isSidebarOpened && <AgentRow />} */}
         <CampaignTable />
       </PageContainer>
     </Col>

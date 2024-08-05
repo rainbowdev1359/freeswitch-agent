@@ -81,11 +81,11 @@ export function SideBar({ activePage, isSidebarOpened, activeMobile, setActiveMo
     //   icon: theme == "dark" || activePage == "/campaign" || hovered == "/campaign" ? "/campaignIcon.svg" : "campaignIcon-light.svg",
     //   to: "/campaign",
     // },
-    // {
-    //   name: <span>{t('Companies')}</span>,
-    //   icon: theme == "dark" || activePage == "/company" || hovered == "/company" ? "/companyIcon.svg" : "companyIcon-light.svg",
-    //   to: "/company",
-    // },
+    {
+      name: <span>{t('RAG Model')}</span>,
+      icon: theme == "dark" || activePage == "/modeltest" || hovered == "/modeltest" ? "/companyIcon.svg" : "companyIcon-light.svg",
+      to: "/modeltest",
+    },
     {
       name: <span>{t('Knowledge')}</span>,
       icon: theme == "dark" || activePage == "/knowledge" || hovered == "/knowledge" ? "/knowledgeIcon.svg" : "knowledgeIcon-light.svg",
