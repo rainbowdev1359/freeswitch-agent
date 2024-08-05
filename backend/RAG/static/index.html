@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AI Sales Coach</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chat-box { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+        #user-input { width: 80%; padding: 10px; }
+        #send-button, #clear-button { padding: 10px; }
+        #button-container { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Chat with AI Sales Coach</h1>
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type your message here..." />
+    <div id="button-container">
+        <button id="send-button">Send</button>
+        <button id="clear-button">Clear</button>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const clearButton = document.getElementById('clear-button');
+
+        sendButton.onclick = async function() {
+            const message = userInput.value;
+            chatBox.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+            userInput.value = '';
+
+            // Send the message to the FastAPI server
+            const response = await fetch('http://75.101.228.188:8001/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message })
+            });
+
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder('utf-8');
+            let done = false;
+
+            while (!done) {
+                const { value, done: doneReading } = await reader.read();
+                done = doneReading;
+                const chunk = decoder.decode(value, { stream: !done });
+                if (chunk) {
+                    // Clean up the chunk to remove "data: " prefixes
+                    const cleanedChunk = chunk.replace(/^data: /gm, '').trim();
+                    if (cleanedChunk) {
+                        chatBox.innerHTML += `<div><strong>AI:</strong> ${cleanedChunk}</div>`;
+                        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+                    }
+                }
+            }
+        };
+
+        clearButton.onclick = function() {
+            chatBox.innerHTML = ''; // Clear the chat box
+        };
+
+        // Optional: Allow pressing "Enter" to send the message
+        userInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                sendButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
